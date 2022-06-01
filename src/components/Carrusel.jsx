@@ -1,12 +1,13 @@
 import React from 'react';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import primera from '../../public/img/fondonegro.jpg';
 import segunda from '../../public/img/fondobesh.jpg';
 import tercera from '../../public/img/fondoverde.jpg';
 import cuarta from '../../public/img/fondoazul.jpg';
 import quinta from '../../public/img/fondorosado.jpg';
+
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Carrusel = () =>{
   return(
