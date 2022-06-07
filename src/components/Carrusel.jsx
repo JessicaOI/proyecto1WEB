@@ -57,9 +57,6 @@ const Carrusel = () =>{
                     <div className='linea5'></div>
               </ul>
             </div>
-
-            
-
           </div>
           
 
@@ -74,8 +71,21 @@ const Carrusel = () =>{
                 </ul>
               </li>
             </ul>
+
+      
         
       </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">FAMILY SITES</button>
+        <div class="dropdown-content">
+          <a href="#">WEVERSE</a>
+          <a href="#">WEVERSE SHOP</a>
+          <a href="#">BIG HIT AUDITION</a>
+          <a href="#">HYBE CO., LTD.</a>
+        </div>
+      </div>
+
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false" style={{height: "110vh", width: "100%", position: "absolute", top:"-10%"}}>
       <div className="carousel-indicators" style={{
         padding: "70px",
@@ -191,6 +201,8 @@ const Carrusel = () =>{
       </button>
     </div>
     
+    
+
     <footer className='abajo'>
 
       <img className='red' src={twitter}/>
@@ -198,20 +210,11 @@ const Carrusel = () =>{
       <img className='red' src={youtube}/>
       <img className='red' src={tiktok}/>
 
-      <ul className='nav'>
-        <li ><a className='fam' href="#">FAMILY SITES</a>
-          <ul className='subabajo'> 
-            <li><a href="#">ENG</a></li>
-            <li><a href="#">KOR</a></li>
-            <li><a href="#">JPN</a></li>
-            <li><a href="#">CHN</a></li>
-          </ul>
-        </li>
-      </ul>
 
 
     </footer>
-    
+
+
     </>
   );
 
