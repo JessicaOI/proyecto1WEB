@@ -7,3 +7,5 @@ Para los estilos se necesito
 ### `npm install css-hot-loader`
 
 ### `npm install style-loader`
+
+### `npm install css-loader`

@@ -1,0 +1,24 @@
+.cabecera
+{
+
+    height: 65px;
+    position: relative;
+    /*top: 60px;*/
+    background-color: #27272748;
+    z-index: 1000;
+    
+
+}
+
+.abajo
+{
+    background-color: #272727;
+    height: 70px;
+    position: relative;
+    top: 840px;
+}
+
+
+input{
+    display: none;
+}
