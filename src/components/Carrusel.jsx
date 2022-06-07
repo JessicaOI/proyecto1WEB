@@ -13,6 +13,7 @@ import tomorrow2 from '../../public/img/tomorrow2.png';
 import lee from '../../public/img/lee.png';
 
 import icono from '../../public/img/menu(1).png';
+import icono2 from '../../public/img/reject.png';
 import logo from '../../public/img/logo.png';
 
 
@@ -25,16 +26,54 @@ const Carrusel = () =>{
   return(
     <>
 
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet"/>
       <div className='cabecera'>
         <input type = "checkbox" id = "check"/>
-        <label for = "check" className = "checkbtn">
-          <img src={icono} style={{width: "22px", height: "24px", position: "absolute", top: "22px", left: "32px"}}/>
-          <a href='/'><img src={logo} style={{width: "2.8%", position: "absolute", top: "15px", left: "48.6%"}}/></a>
-        </label>
+          <label for = "check" className = "checkbtn">
+            <img className = 'barras' src={icono} style={{width: "22px", height: "24px", position: "absolute", top: "22px", left: "32px"}}/>
+            <img className = 'equis' src={icono2}/>
+          </label>
+          
+          <div className='menuPantalla'>
+          
+            <div className='negro'>
+              <ul className='mp'> 
+                    <li><a href="#">HOME</a></li>
+                    <div className='linea'></div>
+                    <li><a href="#">ABOUT</a></li>
+                    <div className='linea2'></div>
+                    <li><a href="#">BTS</a></li>
+                    <div className='linea3'></div>
+                    <li><a href="#">TOMORROW X TOGETHER</a></li>
+                    <div className='linea4'></div>
+                    <li><a href="#">LEE HYUN</a></li>
+                    <div className='linea5'></div>
+              </ul>
+            </div>
+
+            
+
+          </div>
+          
+
+          <a href='/'><img className='Logo' src={logo} style={{width: "2.8%", position: "absolute", top: "15px", left: "48.6%"}}/></a>
+          <ul className='idiomas'>
+              <li ><a className='navbar' href="#">ENG</a>
+                <ul className='submenu'> 
+                  <li className='lip'><a className = 'primero' href="#">ENG</a></li>
+                  <li><a href="#">KOR</a></li>
+                  <li><a href="#">JPN</a></li>
+                  <li><a href="#">CHN</a></li>
+                </ul>
+              </li>
+            </ul>
         
       </div>
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false" style={{height: "110vh", width: "100%", position: "absolute", top:"-10%"}}>
       <div className="carousel-indicators" style={{padding: "70px"}}>
+
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"
         style={{
           display: "block",
@@ -82,6 +121,7 @@ const Carrusel = () =>{
           }}/>
           <img src={primera}className="d-block w-100" alt="..." style={{height: "100%"}}/>
           
+          
         </div>
         <div className="carousel-item" style={{height: "100%"}}>
         <img src={tomorrow}className="d-block w-70 h-60" alt="..." style={
@@ -120,16 +160,21 @@ const Carrusel = () =>{
           <img src={quinta} className="d-block w-100" alt="..."/>
         </div>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style={{position: "fixed",left: "-5%"}}>
+        <span className="carousel-control-prev-icon" aria-hidden="true" ></span>
         <span className="visually-hidden">Previous</span>
       </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style={{ position: "fixed", right: "-5%"}}>
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
     </div>
-    <footer className='abajo'></footer>
+    
+    <footer className='abajo'>
+
+
+    </footer>
     
     </>
   );

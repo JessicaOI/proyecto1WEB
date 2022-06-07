@@ -22,3 +22,175 @@
 input{
     display: none;
 }
+
+.idiomas{
+    position: absolute;
+    left: 95%;
+    top: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.idiomas li a{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(209, 201, 201);
+    transition: all 500ms ease;
+    text-decoration: none;
+}
+
+.submenu
+{
+    position: fixed;
+    right:1%;
+    display: none;
+}
+
+.idiomas .submenu li{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(209, 201, 201);
+    transition: all 500ms ease;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 15px 15px 20px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.idiomas .submenu li:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.idiomas .submenu li:hover > a{
+    color: #ffffff;
+}
+
+.idiomas .submenu li a{
+    color: #818181;
+}
+
+
+
+.idiomas li:hover .submenu{
+	display: block;
+}
+
+.submenu li.lip{
+    background-color: black;
+}
+.submenu li.lip .primero{
+    color: #ffffff;
+}
+
+
+
+label img.equis{
+    width: 29px;
+    height: 31px;
+    position: absolute;
+    top: 16px;
+    left: 29px;
+}
+
+input ~ label img.equis {
+   opacity: 0;
+   visibility: hidden;
+}
+
+input:checked ~ label img.equis {
+    opacity: 1;
+    visibility: visible;
+}
+
+input:checked ~ label img.barras {
+    opacity: 0;
+    visibility: hidden;
+}
+
+input ~ label img.barras {
+    opacity: 1;
+    visibility: visible;
+ }
+
+
+ div.negro{
+    min-height: 100vh;
+    background-color: rgba(36, 36, 36, 0.733);
+ }
+
+ input ~ .menuPantalla{
+    display: none;
+    transition: all 500ms ease;
+ }
+ 
+ input:checked ~ .menuPantalla{
+    display: block;
+    
+ }
+
+ input:checked ~ a img.Logo {
+    opacity: 0.1;
+ }
+
+
+ ul.mp {
+    
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    margin-right: 1%;
+    top: 20vh;
+
+ }
+
+ ul.mp li a{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 2.5vh;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    padding: 1.1em;
+ }
+
+.mp div{
+    width: 350px;
+    height: 1px;
+    background-color: rgb(158, 158, 158);
+    
+ }
+
+div.linea{
+    position: absolute;
+    top: 20%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+div.linea2{
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+div.linea3{
+    position: absolute;
+    top: 60%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+div.linea4{
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+div.linea5{
+    position: absolute;
+    top: 100%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
