@@ -16,6 +16,11 @@ import icono from '../../public/img/menu(1).png';
 import icono2 from '../../public/img/reject.png';
 import logo from '../../public/img/logo.png';
 
+import twitter from '../../public/img/twitter.png';
+import facebook from '../../public/img/facebook.png';
+import youtube from '../../public/img/youtube.png';
+import tiktok from '../../public/img/tiktok.png';
+
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -72,7 +77,12 @@ const Carrusel = () =>{
         
       </div>
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false" style={{height: "110vh", width: "100%", position: "absolute", top:"-10%"}}>
-      <div className="carousel-indicators" style={{padding: "70px"}}>
+      <div className="carousel-indicators" style={{
+        padding: "70px",
+        position: "fixed",
+        left: "0.6%",
+        bottom: "-1%"
+        }}>
 
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"
         style={{
@@ -81,6 +91,8 @@ const Carrusel = () =>{
           height: "10px",
           borderRadius: "50%",
           borderLeft: "80px",
+          marginTop: "5%",
+          marginRight:"0.6%"
           }}></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" 
         style={{
@@ -88,6 +100,8 @@ const Carrusel = () =>{
           width: "10px",
           height: "10px",
           borderRadius: "50%",
+          marginTop: "5%",
+          marginRight:"0.6%"
           }}></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
         style={{
@@ -95,6 +109,8 @@ const Carrusel = () =>{
           width: "10px",
           height: "10px",
           borderRadius: "50%",
+          marginTop: "5%",
+          marginRight:"0.6%"
           }}></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"
         style={{
@@ -102,6 +118,8 @@ const Carrusel = () =>{
           width: "10px",
           height: "10px",
           borderRadius: "50%",
+          marginTop: "5%",
+          marginRight:"0.6%"
           }}></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"
         style={{
@@ -109,6 +127,8 @@ const Carrusel = () =>{
           width: "10px",
           height: "10px",
           borderRadius: "50%",
+          marginTop: "5%",
+          marginRight:"0.6%"
           }}></button>
       </div>
       <div className="carousel-inner" >
@@ -172,6 +192,22 @@ const Carrusel = () =>{
     </div>
     
     <footer className='abajo'>
+
+      <img className='red' src={twitter}/>
+      <img className='red' src={facebook}/>
+      <img className='red' src={youtube}/>
+      <img className='red' src={tiktok}/>
+
+      <ul className='nav'>
+        <li ><a className='fam' href="#">FAMILY SITES</a>
+          <ul className='subabajo'> 
+            <li><a href="#">ENG</a></li>
+            <li><a href="#">KOR</a></li>
+            <li><a href="#">JPN</a></li>
+            <li><a href="#">CHN</a></li>
+          </ul>
+        </li>
+      </ul>
 
 
     </footer>
