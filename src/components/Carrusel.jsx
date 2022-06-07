@@ -41,6 +41,28 @@ const Carrusel = () =>{
             <img className = 'equis' src={icono2}/>
           </label>
           
+          <div class="dropdown">
+        <button class="dropbtn">FAMILY SITES</button>
+        <div class="dropdown-content">
+          <a href="#">WEVERSE</a>
+          <a href="#">WEVERSE SHOP</a>
+          <a href="#">BIG HIT AUDITION</a>
+          <a href="#">HYBE CO., LTD.</a>
+        </div>
+      </div>
+
+      <footer className='abajo'>
+
+      <img className='red' src={twitter}/>
+      <img className='red' src={facebook}/>
+      <img className='red' src={youtube}/>
+      <img className='red' src={tiktok}/>
+
+      <h4 className='sub1'>관련사이트</h4>
+      <h4 className='sub2'>COPYRIGHT © 2021 BIG HIT MUSIC / HYBE. ALL RIGHTS RESERVED</h4>
+
+    </footer>
+
           <div className='menuPantalla'>
           
             <div className='negro'>
@@ -76,15 +98,7 @@ const Carrusel = () =>{
         
       </div>
 
-      <div class="dropdown">
-        <button class="dropbtn">FAMILY SITES</button>
-        <div class="dropdown-content">
-          <a href="#">WEVERSE</a>
-          <a href="#">WEVERSE SHOP</a>
-          <a href="#">BIG HIT AUDITION</a>
-          <a href="#">HYBE CO., LTD.</a>
-        </div>
-      </div>
+      
 
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false" style={{height: "110vh", width: "100%", position: "absolute", top:"-10%"}}>
       <div className="carousel-indicators" style={{
@@ -203,17 +217,7 @@ const Carrusel = () =>{
     
     
 
-    <footer className='abajo'>
-
-      <img className='red' src={twitter}/>
-      <img className='red' src={facebook}/>
-      <img className='red' src={youtube}/>
-      <img className='red' src={tiktok}/>
-
-
-
-    </footer>
-
+    
 
     </>
   );
